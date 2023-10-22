@@ -1,0 +1,52 @@
+.message {
+  padding-bottom: 3rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  &__title {
+    width: 445px;
+    color: #495567;
+    font-family: Space Mono;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px; /* 100% */
+    letter-spacing: -2.143px;
+  }
+
+  &__text {
+    width: 445px;
+    color: #939caa;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; /* 166.667% */
+    padding-right: 4rem;
+  }
+
+  &__btn {
+    padding: 14px 44px;
+    background-color: #fcb72b;
+    border: 2px solid #fcb72b;
+    cursor: pointer;
+    transition: 0.2s;
+
+    color: #fff;
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+
+    &:hover {
+      border: 2px solid #fcb72b;
+      color: #fcb72b;
+      background: transparent;
+      transition: 0.3s;
+    }
+  }
+}

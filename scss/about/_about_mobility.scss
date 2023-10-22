@@ -1,0 +1,29 @@
+.mobility {
+//   height: 500px;
+padding-bottom: 9rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/mobility_img.png");
+  background-position: right 5rem;
+
+  &__des {
+    padding-top: 9rem;
+    width: 445px;
+  }
+
+  &__title {
+    color: #495567;
+    font-family: Space Mono;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2.143px;
+  }
+
+  &__text {
+    color: #939caa;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

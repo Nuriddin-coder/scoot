@@ -1,0 +1,1091 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #575757;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Space Mono";
+  height: 100%;
+}
+
+.font2 {
+  font-family: "Lexend Deca";
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-mono-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.comfort {
+  background-repeat: no-repeat;
+  background-image: url("../../img/comfort_span_img.svg");
+  background-position: 0rem 7.5rem;
+}
+.comfort_container {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.comfort_container__card {
+  width: 350px;
+  height: 290px;
+  position: relative;
+}
+.comfort_container__card_title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -1.071px;
+}
+.comfort_container__card_title::after {
+  content: "";
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  top: -8rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/comfort_img.svg");
+}
+.comfort_container__card_text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.footer {
+  padding: 2rem 0px;
+  background-color: #333a44;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_container__list {
+  margin-right: 35rem;
+}
+.footer_container__list_links {
+  padding-left: 15px;
+  color: #939caa;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.footer_container__list_links:hover {
+  color: #FCB72B;
+}
+.footer__media {
+  cursor: pointer;
+}
+
+.header {
+  padding-bottom: 21px;
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+}
+.header_navigation {
+  display: flex;
+}
+.header_navigation__img {
+  margin-right: 58px;
+}
+.header_navigation__list {
+  display: flex;
+  align-items: center;
+}
+.header_navigation__links {
+  margin-right: 32px;
+  color: #939caa;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+}
+.header_navigation__links:hover {
+  color: #FCB72B;
+}
+.header_btn {
+  background-color: #fcb72b;
+  padding: 14px 39px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  border: 2px solid #FCB72B;
+  transition: 0.2s;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.header_btn:hover {
+  color: #FCB72B;
+  border: 2px solid #FCB72B;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-image: url("../../img/hero_bg.jpg");
+  background-size: cover;
+  padding: 150px 0px;
+  position: relative;
+}
+.hero_img {
+  position: absolute;
+  right: 0;
+  top: 65%;
+}
+.hero_container__title {
+  max-width: 500px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+.hero_container__text {
+  margin-left: 95px;
+  max-width: 405px;
+  color: #fff;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.hero_container__text::before {
+  content: "";
+  width: 203px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 55%;
+  background-repeat: no-repeat;
+  background-image: url("../../img/hero_line_left.svg");
+}
+.hero_container__text::after {
+  content: "";
+  width: 450px;
+  height: 150px;
+  position: absolute;
+  top: 55%;
+  right: 20rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/hero_line_right.svg");
+}
+.hero_container__btn {
+  background-color: #fcb72b;
+  padding: 14px 39px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 40px;
+  border: 2px solid #FCB72B;
+  transition: 0.2s;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.hero_container__btn:hover {
+  color: #FCB72B;
+  border: 2px solid #FCB72B;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.info {
+  padding-bottom: 8rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/info_img.png");
+  background-position: right 0px;
+}
+.info_container__des {
+  max-width: 450px;
+}
+.info_container__des_title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2.143px;
+}
+.info_container__des_text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.info_container__des_btn {
+  padding: 14px 43px;
+  background-color: #fcb72b;
+  border: none;
+  cursor: pointer;
+  margin-top: 54px;
+  border: 2px solid #fcb72b;
+  transition: 0.2s;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.info_container__des_btn:hover {
+  color: #fcb72b;
+  border: 2px solid #fcb72b;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.map {
+  padding-bottom: 3rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/map_img.png");
+  background-position: 0px 60px;
+}
+.map_container {
+  padding-top: 60px;
+  display: flex;
+  justify-content: end;
+}
+.map_container__des {
+  max-width: 450px;
+}
+.map_container__des_title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2.143px;
+}
+.map_container__des_text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.map_container__des_btn {
+  padding: 14px 43px;
+  background-color: #fcb72b;
+  border: none;
+  cursor: pointer;
+  margin-top: 54px;
+  border: 2px solid #fcb72b;
+  transition: 0.3s;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.map_container__des_btn:hover {
+  color: #fcb72b;
+  border: 2px solid #fcb72b;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.payments {
+  padding-bottom: 178px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/payments_img.png");
+  background-position: right 3rem;
+}
+.payments_container__des {
+  max-width: 450px;
+  padding-top: 3rem;
+}
+.payments_container__des_title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2.143px;
+}
+.payments_container__des_text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.payments_container__des_btn {
+  padding: 14px 43px;
+  background-color: #fcb72b;
+  border: none;
+  cursor: pointer;
+  margin-top: 54px;
+  border: 2px solid #fcb72b;
+  transition: 0.3s;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.payments_container__des_btn:hover {
+  color: #fcb72b;
+  border: 2px solid #fcb72b;
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.sign {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/sign_main_img.png");
+  background-size: cover;
+}
+.sign_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5rem;
+}
+.sign_container__title {
+  width: 415px;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+
+.about_hero {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/about_hero_img.png");
+  background-size: cover;
+  position: relative;
+}
+.about_hero__text {
+  padding-top: 4rem;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+.about_hero__img {
+  position: absolute;
+  right: 0;
+  top: 40%;
+}
+
+.living {
+  padding-bottom: 9rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/living_img.png");
+}
+.living__des {
+  width: 445px;
+  margin-left: 43rem;
+  padding-top: 5rem;
+}
+.living__title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2.143px;
+}
+.living__text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.mobility {
+  padding-bottom: 9rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/mobility_img.png");
+  background-position: right 5rem;
+}
+.mobility__des {
+  padding-top: 9rem;
+  width: 445px;
+}
+.mobility__title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.mobility__text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.question {
+  padding-bottom: 160px;
+}
+.question__title {
+  text-align: center;
+}
+.question_work {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.question_work__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 23px;
+}
+.question_work__items {
+  padding: 32px 334px 32px 40px;
+  background-color: #f2f5f9;
+  border-radius: 3px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url("../../img/question_img.svg");
+  background-position: 97% 50%;
+}
+.question_work__items:hover {
+  background-color: #fff4df;
+  transition: 0.3s;
+}
+.question_driving {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.question_driving__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 23px;
+}
+.question_driving__items {
+  padding: 32px 275px 32px 40px;
+  background-color: #f2f5f9;
+  border-radius: 3px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url("../../img/question_img.svg");
+  background-position: 97% 50%;
+}
+.question_driving__items:hover {
+  background-color: #fff4df;
+  transition: 0.3s;
+}
+
+.values {
+  padding-bottom: 100px;
+}
+.values__container {
+  padding-top: 2rem;
+}
+.values__title {
+  text-align: center;
+}
+.values_cards {
+  display: flex;
+  gap: 1rem;
+  width: 350px;
+  text-align: center;
+}
+.values_cards__title {
+  padding-top: 2rem;
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+}
+.values_cards__text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.mission {
+  padding-bottom: 11rem;
+  background-repeat: no-repeat;
+  background-image: url("../../img/career_mission_img.png");
+  background-position: right center;
+}
+.mission__des {
+  padding-top: 6rem;
+  max-width: 445px;
+}
+.mission__des_title {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+}
+.mission__des_text {
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+.mission__des_btn {
+  padding: 14px 48px;
+  background-color: #fcb72b;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  border: 2px solid #fcb72b;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 40px;
+}
+.mission__des_btn:hover {
+  border: 2px solid #fcb72b;
+  background: transparent;
+  color: #fcb72b;
+  transition: 0.3s;
+}
+
+.people {
+  padding-bottom: 160px;
+}
+.people_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding: 16px 40px;
+  background-color: #f2f5f9;
+  border-radius: 3px;
+}
+.people_box__info {
+  padding-top: 1rem;
+}
+.people_box__position {
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -1.071px;
+}
+.people_box__location {
+  color: #495567;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+.people_box__btn {
+  padding: 8px 64px;
+  background-color: #fcb72b;
+  border: 2px solid #fcb72b;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fff;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.people_box__btn:hover {
+  color: #fcb72b;
+  border: 2px solid #fcb72b;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.earth_container {
+  position: relative;
+}
+.earth_loc {
+  position: absolute;
+  left: 11rem;
+  top: 10rem;
+  cursor: pointer;
+}
+.earth_loc__2 {
+  position: absolute;
+  left: 26rem;
+  top: 7.5rem;
+  cursor: pointer;
+}
+.earth_loc__3 {
+  position: absolute;
+  left: 55rem;
+  top: 11.1rem;
+  cursor: pointer;
+}
+.earth_loc__4 {
+  position: absolute;
+  top: 22rem;
+  left: 50rem;
+  cursor: pointer;
+}
+.earth_img {
+  margin-top: 100px;
+  width: 1110px;
+  height: 543px;
+}
+
+.message {
+  padding-bottom: 3rem;
+}
+.message__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+}
+.message__title {
+  width: 445px;
+  color: #495567;
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -2.143px;
+}
+.message__text {
+  width: 445px;
+  color: #939caa;
+  font-family: Lexend Deca;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+  padding-right: 4rem;
+}
+.message__btn {
+  padding: 14px 44px;
+  background-color: #fcb72b;
+  border: 2px solid #fcb72b;
+  cursor: pointer;
+  transition: 0.2s;
+  color: #fff;
+  text-align: center;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.message__btn:hover {
+  border: 2px solid #fcb72b;
+  color: #fcb72b;
+  background: transparent;
+  transition: 0.3s;
+}/*# sourceMappingURL=main.css.map */

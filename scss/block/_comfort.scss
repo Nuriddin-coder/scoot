@@ -1,0 +1,47 @@
+.comfort {
+  background-repeat: no-repeat;
+  background-image: url('../../img/comfort_span_img.svg');
+  background-position: 0rem 7.5rem;
+
+
+     &_container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    &__card {
+      width: 350px;
+      height: 290px;
+      position: relative;
+
+      &_title {
+        color: #495567;
+        font-family: Space Mono;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px; /* 116.667% */
+        letter-spacing: -1.071px;
+      }
+
+      &_title::after {
+        content: "";
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        left: 0;
+        top: -8rem;
+        background-repeat: no-repeat;
+        background-image: url("../../img/comfort_img.svg");
+      }
+
+      &_text {
+        color: #939caa;
+        font-family: Lexend Deca;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 166.667% */
+      }
+    }
+   }
+}

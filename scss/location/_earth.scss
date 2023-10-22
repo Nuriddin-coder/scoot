@@ -1,0 +1,43 @@
+.earth {
+
+   &_container {
+      position: relative;
+   }
+
+   &_loc {
+      position: absolute;
+      left: 11rem;
+      top: 10rem;
+      cursor: pointer;
+
+
+      &__2 {
+         position: absolute;
+         left: 26rem;
+         top: 7.5rem;
+         cursor: pointer;
+
+      }
+
+      &__3 {
+         position: absolute;
+         left: 55rem;
+         top: 11.1rem;
+         cursor: pointer;
+
+      }
+
+      &__4 {
+         position: absolute;
+         top: 22rem;
+         left: 50rem;
+         cursor: pointer;
+      }
+   }
+
+  &_img {
+    margin-top: 100px;
+    width: 1110px;
+    height: 543px;
+  }
+}

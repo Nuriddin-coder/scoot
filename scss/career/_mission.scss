@@ -1,0 +1,50 @@
+.mission {
+      padding-bottom: 11rem;
+      background-repeat: no-repeat;
+      background-image: url('../../img/career_mission_img.png'); 
+      background-position: right center;
+      
+  &__des {
+    padding-top: 6rem;
+    max-width: 445px;
+
+    &_title {
+      color: #495567;
+      font-family: Space Mono;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.143px;
+    }
+
+    &_text {
+      color: #939caa;
+      font-family: Lexend Deca;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px; /* 166.667% */
+    }
+
+    &_btn {
+      padding: 14px 48px;
+      background-color: #fcb72b;
+      color: #fff;
+      text-align: center;
+      font-family: Space Mono;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 25px;
+      border: 2px solid #fcb72b;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 40px;
+
+      &:hover {
+        border: 2px solid #fcb72b;
+        background: transparent;
+        color: #fcb72b;
+        transition: 0.3s;
+      }
+    }
+  }
+}

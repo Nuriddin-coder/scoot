@@ -1,0 +1,57 @@
+.people {
+  padding-bottom: 160px;
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+
+    padding: 16px 40px;
+    background-color: #f2f5f9;
+    border-radius: 3px;
+
+    &__info {
+      padding-top: 1rem;
+    }
+
+    &__position {
+      color: #495567;
+      font-family: Space Mono;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 116.667% */
+      letter-spacing: -1.071px;
+    }
+
+    &__location {
+      color: #495567;
+      font-family: Lexend Deca;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px; /* 166.667% */
+    }
+
+    &__btn {
+      padding: 8px 64px;
+      background-color: #fcb72b;
+      border: 2px solid #fcb72b;
+      cursor: pointer;
+      transition: 0.2s;
+
+      color: #fff;
+      font-family: Space Mono;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 25px;
+
+      &:hover {
+        color: #fcb72b;
+        border: 2px solid #fcb72b;
+        transition: 0.3s;
+        background: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  padding: 2rem 0px;
+  background-color: #333a44;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      margin-right: 35rem;
+
+      &_links {
+        padding-left: 15px;
+        color: #939caa;
+        font-family: Space Mono;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+
+         &:hover {
+          color: #FCB72B;
+         }
+      }
+    }
+  }
+
+  &__media {
+    cursor: pointer;
+  }
+}

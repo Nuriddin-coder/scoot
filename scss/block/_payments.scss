@@ -1,0 +1,55 @@
+.payments {
+  padding-bottom: 178px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/payments_img.png");
+  background-position: right 3rem;
+
+  &_container__des {
+    max-width: 450px;
+    padding-top: 3rem;
+
+    &_title {
+      color: #495567;
+      font-family: Space Mono;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 100% */
+      letter-spacing: -2.143px;
+    }
+
+    &_text {
+      color: #939caa;
+      font-family: Lexend Deca;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+    }
+
+    &_btn {
+      padding: 14px 43px;
+      background-color: #fcb72b;
+      border: none;
+      cursor: pointer;
+      margin-top: 54px;
+      border: 2px solid #fcb72b;
+      transition: 0.3s;
+
+      color: #fff;
+      text-align: center;
+      font-family: Space Mono;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px;
+
+      &:hover {
+        color: #fcb72b;
+        border: 2px solid #fcb72b;
+        background-color: transparent;
+        transition: 0.3s;
+      }
+    }
+  }
+}

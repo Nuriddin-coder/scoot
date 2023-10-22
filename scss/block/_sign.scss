@@ -1,0 +1,23 @@
+.sign {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/sign_main_img.png");
+  background-size: cover;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+
+    &__title {
+      width: 415px; 
+      color: #fff;
+      font-family: Space Mono;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.143px;
+    }
+  }
+}

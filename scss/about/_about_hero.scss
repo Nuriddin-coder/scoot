@@ -1,0 +1,24 @@
+.about_hero {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/about_hero_img.png");
+  background-size: cover;
+  position: relative;
+  // padding-bottom: 6rem;
+
+  &__text {
+    padding-top: 4rem;
+    color: #fff;
+    font-family: Space Mono;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+  }
+
+  &__img {
+       position: absolute;
+       right: 0;
+       top: 40%;
+  }
+}
